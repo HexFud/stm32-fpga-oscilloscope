@@ -18,6 +18,30 @@ I have designed the PCB starting from an STM32H7 microcontroller because of its 
 - 2 Rotary encoders and 6 tactile buttons for UI navigation
 - A 40-pin FPC socket for an RGB LCD display with a dedicated capacitive touch connector.
 
+## Specifications
+
+| Parameter | Value |
+| :--- | :--- |
+| Channels | 1 analog |
+| Analog bandwidth | 20 MHz |
+| Sample rate | 100 MS/s |
+| Input | BNC, 1 MΩ, x1 / x10 probes |
+| Processing | STM32H7 + Lattice iCE40 FPGA |
+| Display | 7" 800x480 RGB LCD, capacitive touch |
+| User input | 2 rotary encoders, 6 buttons, touchscreen |
+| Power / data | USB-C, 5 V |
+| PCB | Custom 4-layer |
+
+## Firmware
+The firmware runs on the STM32H7 and is built with STM32CubeIDE and the STM32 HAL. It is responsible for acquisition control, trigger handling, signal processing, rendering the waveform and handling the user interface.
+
+## Display and UI
+
+- Waveform area with a graticule (grid) and a measurement/status bar
+- Frame buffer in memory, redrawn on every new acquisition **TODO**
+- Controls: one encoder for time base, one for volts/div, buttons for run/stop, single, trigger mode, etc.
+- Touchscreen for menus and cursors **TODO:**
+
 ## External connections
 
 1. USB-C Power and Data (P1) this port powers the entire board and it is protected against ESD via a dedicated USBLC6-2SC6 chip
