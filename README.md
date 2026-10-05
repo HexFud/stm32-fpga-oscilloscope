@@ -153,8 +153,8 @@ The full list is in [`bom.csv`](bom.csv). The total is **614.79 USD**. It includ
 
 This project includes experimental software, hardware designs, and assembly documentation are still under development and may contain bugs, errors, or incomplete features. By using, building, or modifying this project, you acknowledge that:
 
-1\. You use this project entirely at your own risk
-2\. You are solely responsible for safe assembly, testing, and operation
-3\. The autor isn't responsible for any type of damage, injury or loss to people or the machine itself
+1. You use this project entirely at your own risk
+2. You are solely responsible for safe assembly, testing, and operation
+3. The autor isn't responsible for any type of damage, injury or loss to people or the machine itself
 
 By proceeding, you accept all risks and agree to these conditions. If you do not acknowledge these risks and conditions, please do not use or build this project.
